@@ -190,9 +190,8 @@ public class ChessMatch {
 				else {
 					pawnPositon = new Position(4, target.getColumn());
 				}
-				capturedPiece = board.removePiece(pawnPositon);
-				capturedPieces.add(capturedPiece);
-				piecesOnTheBoard.remove(capturedPiece);
+				board.placePiece(pawn, pawnPositon);
+				
 			}
 			
 		}
